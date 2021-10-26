@@ -1,6 +1,6 @@
 {
   "private": true,
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Te1m0z/walden-layout/issues"
   },
-  "homepage": "https://github.com/Te1m0z/walden-layout#readme"
+  "homepage": "https://github.com/Te1m0z/walden-layout#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
