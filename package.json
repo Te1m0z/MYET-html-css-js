@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Te1m0z/walden-layout.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "gulp",
+    "node.js"
+  ],
+  "author": "te1m0z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Te1m0z/walden-layout/issues"
+  },
+  "homepage": "https://github.com/Te1m0z/walden-layout#readme"
+}
