@@ -28,6 +28,6 @@ export const styles = () => {
             level: 2
         }))
         .pipe(sourcemaps.write('../sourcemaps/'))
-        .pipe(gulp.dest('build/css'))
+        .pipe(gulp.dest('src/css'))
         .pipe(sync.stream())
 }
