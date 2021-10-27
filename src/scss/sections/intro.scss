@@ -1,0 +1,15 @@
+.intro-sec {
+    height: 100vh;
+    // width: 100vw;
+
+    &_bg {
+        height: 100%;
+        background: chartreuse;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }   
+}

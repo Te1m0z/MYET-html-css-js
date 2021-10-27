@@ -1,13 +1,6 @@
+@import './fonts.scss';
 @import './vars.scss';
+@import './global.scss';
 
-body {
-    min-width: 320px;
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-img {
-    display: grid;
-    background-image: url('../assets/nais.png');
-}
+@import './sections/header.scss';
+@import './sections/intro.scss';
