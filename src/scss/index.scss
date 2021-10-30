@@ -1,6 +1,5 @@
-@import './fonts.scss';
-@import './vars.scss';
-@import './global.scss';
+@import './import/vars.scss';
 
-@import './sections/header.scss';
-@import './sections/intro.scss';
+body {
+    background: $grey;
+}

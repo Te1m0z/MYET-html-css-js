@@ -1,18 +1,23 @@
-import gulp from 'gulp'
-import bs from 'browser-sync'
-import { styles } from './gulp/styles.js'
-import { scripts } from './gulp/scripts.js'
-import { server } from './gulp/server.js'
+'use strict';
 
-const watching = () => {
-    gulp.watch('src/scss/**/*.scss', styles)
-    // gulp.watch(['!src/js/main.min.js', 'src/js/main.js'], scripts)
-    gulp.watch('src/index.html').on('change', bs.reload)
+global.$ = {
+    gulp: require('gulp'),
+    plugins: require('gulp-load-plugins')(),
+    sync: require('browser-sync').create(),
+    path: {
+        tasks: require('./gulp/config.js')
+    }
 }
 
-export default gulp.parallel(
-    styles,
-    scripts,
-    server,
-    watching
-)
+$.path.tasks.forEach(task => {
+    require(task)()
+})
+
+$.gulp.task('default', $.gulp.series(
+    'sass:dev',
+    $.gulp.parallel('watch', 'serve')
+))
+
+// $.gulp.task('build', $.gulp.series(
+//     $.gulp.parallel('pug', 'sass', 'scripts:lib', 'scripts', 'img', 'fonts', 'svg')
+// ));
