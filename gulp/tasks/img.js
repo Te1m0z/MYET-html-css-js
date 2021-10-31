@@ -1,6 +1,6 @@
 module.exports = () => {
     $.gulp.task('img', () => {
-        return $.gulp.src('src/img/*.{png,jpg,jpeg,svg}')
+        return $.gulp.src('src/static/img/*.{png,jpg,jpeg,svg}')
             .pipe($.gulp.dest('build/img'))
     })
 }

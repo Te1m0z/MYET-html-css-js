@@ -1,0 +1,25 @@
+.header {
+    height: 60px;
+    // border-bottom: 1px solid $black;
+
+    & .container-medium {
+        height: inherit;
+    }
+
+    &-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+
+        & .join-us {
+            color: $black;
+            font-size: 14px;
+
+            &-btn {
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+body, html {
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Roboto Regular';
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.container-medium {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

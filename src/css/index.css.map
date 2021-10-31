@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.scss","index.css"],"names":[],"mappings":"AAEA;EACI,eAH4C;ACEhD","file":"index.css","sourcesContent":["@import './import/vars.scss';\r\n\r\nbody {\r\n    background: red;\r\n}","body {\n  background: red;\n}\n"]}

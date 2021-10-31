@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+input,
+textarea,
+button,
+select {
+    border: none;
+    outline: none;
+    background: none;
+    display: block;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
