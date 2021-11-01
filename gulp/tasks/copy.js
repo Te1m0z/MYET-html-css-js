@@ -3,13 +3,13 @@ module.exports = () => {
         return $.gulp.src([
             'src/static/fonts/**/*.*',
         ])
-            .pipe($.gulp.dest('build/fonts/'))
+            .pipe($.gulp.dest($.path.build + '/fonts/'))
     })
 
     $.gulp.task('copy:img', () => {
         return $.gulp.src([
             'src/static/img/**/*.*',
         ])
-            .pipe($.gulp.dest('build/img/'))
+            .pipe($.gulp.dest($.path.build + '/img/'))
     })
 }

@@ -4,7 +4,7 @@ module.exports = () => {
             open: false,
             port: 5000,
             server: {
-                baseDir: 'build',
+                baseDir: $.path.build,
                 index: 'index.html'
             }
         })

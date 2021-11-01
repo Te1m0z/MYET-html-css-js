@@ -4,7 +4,7 @@ module.exports = () => {
             .pipe($.plugins.pug({
                 pretty: true
             }))
-            .pipe($.gulp.dest('build'))
+            .pipe($.gulp.dest($.path.build))
             .on('end', $.sync.reload)
     })
 }

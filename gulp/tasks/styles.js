@@ -10,7 +10,7 @@ module.exports = () => {
             }))
             .pipe($.plugins.concat('index.min.css'))
             .pipe($.plugins.sourcemaps.write('./'))
-            .pipe($.gulp.dest('build/css'))
+            .pipe($.gulp.dest($.path.build + '/css'))
             .pipe($.sync.stream())
     })
 }

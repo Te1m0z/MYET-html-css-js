@@ -5,7 +5,8 @@ global.$ = {
     plugins: require('gulp-load-plugins')(),
     sync: require('browser-sync').create(),
     path: {
-        tasks: require('./gulp/config.js')
+        tasks: require('./gulp/config.js'),
+        build: 'docs',
     }
 }
 
@@ -18,6 +19,7 @@ $.gulp.task('default', $.gulp.series(
     'styles',
     'scripts',
     'img',
+    'libs',
     'copy:fonts',
     'copy:img',
     $.gulp.parallel('watch', 'serve')
