@@ -1,4 +1,4 @@
-@mixin font-face($font-name, $path, $weight: 'normal', $style: 'normal') {
+@mixin font($font-name, $path, $weight: 'normal', $style: 'normal') {
     @font-face {
         font-family: $font-name;
         src: url("../fonts/" + $path + ".eot");

@@ -1,8 +1,7 @@
 @import './vars.scss';
+@import './mixins/fonts.scss';
 @import './fonts.scss';
 @import './reset.scss';
 @import './global.scss';
 
-@import './import/header.scss';
-@import './import/intro-text.scss';
-@import './import/intro-slider.scss';
+@import './components/header';

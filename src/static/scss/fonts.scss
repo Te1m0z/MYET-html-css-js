@@ -1,9 +1,2 @@
-@font-face {
-    font-family: 'Roboto Regular';
-    src: url("Roboto-Regular.eot");
-    src: url("../fonts/Roboto/Roboto-Regular.eot") format("embedded-opentype"),
-        url("../fonts/Roboto/Roboto-Regular.woff") format("woff"),
-        url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
+@include font('BebasNeue Bold', 'BebasNeue/BebasNeueBold', 'bold', 'normal');
+@include font('OpenSans Bold', 'OpenSans/OpenSans-Bold', 'bold', 'normal');

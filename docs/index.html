@@ -10,39 +10,23 @@
   </head>
   <body></body>
   <header class="header" id="header">
-    <div class="container-medium">
-      <div class="header-inner">
-        <div class="logotype"><img src="img/logo.png" alt="Stir Logotype"></div>
-        <div class="join-us">
-          <button class="join-us-btn" type="button">Join our team</button>
+    <div class="container header-container">
+      <div class="header-logo"><img src="../img/logo.png" alt="SOS logo"></div>
+      <nav class="header-menu"><a href="#">Main</a><a href="#">About </a><a href="#">Game features</a><a href="#">Main</a><a href="#">System requirements</a><a href="#">Quotes</a></nav>
+      <nav class="header-nav">
+        <div class="header-nav-lang">
+          <button class="nav-lang-btn" type="button" id="nav-lang-btn"><span>ENG</span>
+            <div class="nav-lang-btn__arrow"><span class="nav-lang-btn-arrow_el"></span><span class="nav-lang-btn-arrow_el"></span></div>
+          </button>
+          <div class="nav-lang-popup">
+            <button class="nav-lang-popup_btn" id="nav-rus-btn">RUS</button>
+            <button class="nav-lang-popup_btn" id="nav-fra-btn">FRA</button>
+            <button class="nav-lang-popup_btn" id="nav-deu-btn">DEU</button>
+          </div>
         </div>
-      </div>
+        <div class="header-nav-download"><a href="#"><img src="../img/icons/steam_icon.svg" alt="Steam logo"></a><a href="#"><img src="../img/icons/xbox_icon.svg" alt="Xbox logo"></a></div>
+      </nav>
     </div>
   </header>
-  <section class="intro" id="intro">
-    <div class="container-medium">
-      <div class="intro-text">
-        <div class="intro-text-title">
-          <h1>Where creators run their business.</h1>
-        </div>
-        <div class="intro-text-subtitle">
-          <h3>Meet Stir. The financial studio for collaborating, splitting revenue, money management and metrics—all in one place</h3>
-        </div>
-      </div>
-      <div class="intro-input">
-        <div class="intro-input-body">
-          <input type="email" placeholder="Enter your email">
-        </div>
-        <div class="intro-input-btn">
-          <button type="button">Get started</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="slider" id="slider">
-    <div class="slider-track"><span class="slide">1</span><span class="slide">2</span><span class="slide">3</span><span class="slide">4</span><span class="slide">5</span><span class="slide">6</span><span class="slide">7</span></div>
-  </section>
-  <script src="libs/jquery/jquery-3.6.0.min.js"></script>
-  <script src="libs/slick/slick.min.js"></script>
   <script src="js/common.min.js"></script>
 </html>

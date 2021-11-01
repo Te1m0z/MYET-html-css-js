@@ -12,9 +12,13 @@ img {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
+    outline: none;
+    border: none;
 
-    &:visited {
+    &:visited,
+    &:link {
         color: inherit;
     }
 }

@@ -2,14 +2,28 @@ body, html {
     min-width: 320px;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: 'Roboto Regular';
+    font-family: 'BebasNeue Bold', sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    background: #313131;
 }
 
-.container-medium {
+.container {
     width: 100%;
     max-width: 1230px;
+    height: inherit;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.primary-btn {
+    background: $orange;
+    color: $black;
+    font-size: 0.8em;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    font-family: 'OpenSans Bold', sans-serif;
 }

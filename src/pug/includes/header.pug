@@ -1,7 +1,27 @@
 header(class='header' id='header')
-    div.container-medium
-        div.header-inner
-            div(class='logotype')
-                img(src='img/logo.png' alt='Stir Logotype')
-            div(class='join-us')
-                button(type='button' class='join-us-btn') Join our team
+    div(class='container header-container')
+        div(class='header-logo')
+            img(src='../img/logo.png' alt='SOS logo')
+        nav(class='header-menu')
+            a(href='#') Main
+            a(href='#') About 
+            a(href='#') Game features
+            a(href='#') Main
+            a(href='#') System requirements
+            a(href='#') Quotes
+        nav(class='header-nav')
+            div(class='header-nav-lang')
+                button(type='button' class='nav-lang-btn' id='nav-lang-btn')
+                    span ENG
+                    div(class='nav-lang-btn__arrow')
+                        span(class='nav-lang-btn-arrow_el')
+                        span(class='nav-lang-btn-arrow_el')
+                div(class='nav-lang-popup')
+                    button(class='nav-lang-popup_btn' id='nav-rus-btn') RUS
+                    button(class='nav-lang-popup_btn' id='nav-fra-btn') FRA
+                    button(class='nav-lang-popup_btn' id='nav-deu-btn') DEU
+            div(class='header-nav-download')
+                a(href="#")
+                    img(src='../img/icons/steam_icon.svg' alt='Steam logo')
+                a(href='#')
+                    img(src='../img/icons/xbox_icon.svg' alt='Xbox logo') 
