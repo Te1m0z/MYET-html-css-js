@@ -1,26 +1,32 @@
-'use strict';
+import gulp from 'gulp'
+import browser from 'browser-sync'
+// gulp tasks
+import * as tasks from './gulp/index.js'
 
 global.$ = {
-    gulp: require('gulp'),
-    plugins: require('gulp-load-plugins')(),
-    sync: require('browser-sync').create(),
+    gulp: gulp,
+    browser: browser.create(),
     path: {
-        tasks: require('./gulp/config.js'),
-        build: 'docs',
-    }
+        build: 'docs'
+    },
+    isProd: false
 }
 
-$.path.tasks.forEach(task => {
-    require(task)()
-})
+export default gulp.series(
+    tasks.pug,
+    tasks.styles,
+    tasks.scripts,
+    tasks.resources,
+    tasks.img,
+    gulp.parallel(
+        tasks.watch,
+        tasks.serve
+    )
+)
 
-$.gulp.task('default', $.gulp.series(
-    'pug',
-    'styles',
-    'scripts',
-    'img',
-    'libs',
-    'copy:fonts',
-    'copy:img',
-    $.gulp.parallel('watch', 'serve')
-))
+const toProd = (done) => {
+    $.isProd = true
+    done()
+}
+
+export const build = gulp.series(toProd, tasks.styles)
